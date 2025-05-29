@@ -1,0 +1,10 @@
+[project]
+name = "capstone-otel-trace"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "opentelemetry-api>=1.33.1",
+    "opentelemetry-sdk>=1.33.1",
+]
