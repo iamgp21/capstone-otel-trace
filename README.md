@@ -45,5 +45,10 @@ This repo demonstrates use of Opentelemetry instrumentation for Trace(signal)
 }
 ```
 
+#### Trace OTLP Exporter:
 
+- This emits the Trace output to Jaeger backend using OTLP/grpc.
 
+**Example Trace Output:**
+
+![jaeger_trace](./images/jaeger_trace.png)
