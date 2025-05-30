@@ -10,6 +10,15 @@ This repo demonstrates use of Opentelemetry instrumentation for Trace(signal)
 - You’ll then use the SDK to initialize OpenTelemetry and the API  to instrument your code. 
 - This will emit telemetry from your app.
 
+
+#### HLD
+
+![OTLP_TRACE_HLD](./images/OTLP_Trace_HLD.png)
+
+> [!NOTE]
+> This diagram sends the traces data directly to trace backend but a collector like opentelemetry collector or Grafana Alloy can be used to act as a intermediary.
+
+
 #### Trace Console Exporter:
 
 - This emits the Trace output on Console.
