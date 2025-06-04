@@ -5,7 +5,7 @@ This repo demonstrates use of Opentelemetry instrumentation for Trace(signal)
 > [!NOTE]
 > This repo uses Python language to demonstrate Opentelemetry Trace instrumentation.
 
-#### Manual Instrumentation:
+### Manual Instrumentation:
 - Need to use the OpenTelemetry SDK for your language. 
 - You’ll then use the SDK to initialize OpenTelemetry and the API  to instrument your code. 
 - This will emit telemetry from your app.
@@ -185,3 +185,20 @@ This repo demonstrates use of Opentelemetry instrumentation for Trace(signal)
   "errors": null
 }
 ```
+
+### ZeroCode Instrumentation:
+- Need to use the OpenTelemetry agent that will autoinstrument your code.
+- Agent will perform `monkey_patching` to instrument code at runtime.
+- It will export the traces to the provided exporter endpoint.
+
+#### HLD
+
+![OTLP_AUTO_INSTRUMENT_TRACE](./images/OTLP_AUTO_INSTRUMENT_TRACE.png)
+
+#### Agent OTLP Exporter:
+
+- This emits the Trace output to Jaeger backend using OTLP/grpc or OTLP/http depending on the endpoint target.
+
+**Example Trace Output:**
+
+![](./images/OTEL_AUTO_INTSTRUMENT_EXAMPLE.png)
